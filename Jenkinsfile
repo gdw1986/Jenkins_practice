@@ -5,7 +5,7 @@ pipeline {
             steps { checkout scm }
         }
         stage('Build') {
-            steps { echo Building feature... }
+            steps { sh 'echo Building feature...' }
 
         }
         stage('Test') {
